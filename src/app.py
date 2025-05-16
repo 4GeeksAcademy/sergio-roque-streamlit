@@ -8,18 +8,18 @@ def load_pickle(file_path):
         return pickle.load(f)
 
 # Cargar encoders
-label_encoder_gender = load_pickle('../models/encoders/label_encoder_gender.sav')
-label_encoder_suicidal = load_pickle('../models/encoders/label_encoder_suicidal.sav')
-label_encoder_mental = load_pickle('../models/encoders/label_encoder_mental.sav')
-ordinal_encoder_sleep = load_pickle('../models/encoders/ordinal_encoder_sleep.sav')
-ordinal_encoder_dietary = load_pickle('../models/encoders/ordinal_encoder_dietary.sav')
+label_encoder_gender = load_pickle('label_encoder_gender.sav')
+label_encoder_suicidal = load_pickle('label_encoder_suicidal.sav')
+label_encoder_mental = load_pickle('label_encoder_mental.sav')
+ordinal_encoder_sleep = load_pickle('ordinal_encoder_sleep.sav')
+ordinal_encoder_dietary = load_pickle('ordinal_encoder_dietary.sav')
 
 # Cargar scaler y selección de características
-scaler = load_pickle('../models/scaler/scaler.sav')
-selector = load_pickle('../models/selection/selection_model.sav')
+scaler = load_pickle('scaler.sav')
+selector = load_pickle('selection_model.sav')
 
 # Cargar modelo
-model = load_pickle('../models/predict/logistic_regression_optimized_42.sav')
+model = load_pickle('logistic_regression_optimized_42.sav')
 
 # Interfaz de usuario
 st.title("Predicción de Salud Mental Estudiantil")
