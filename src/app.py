@@ -26,7 +26,7 @@ st.title("Predicción de Salud Mental Estudiantil")
 
 age = st.slider("Edad", 18, 34)
 academic_pressure = st.slider("Presión académica (0-5)", 0, 5)
-cgpa = st.slider("CGPA (5-10)", 5.0, 10.0, step=0.1)
+cgpa = st.slider("CGPA (Promedio Acumulado de Puntos) (5-10)", 5.0, 10.0, step=0.1)
 study_satisfaction = st.slider("Satisfacción con el estudio (0-5)", 0, 5)
 study_hours = st.slider("Horas de estudio/trabajo (0-12)", 0, 12)
 financial_stress = st.slider("Estrés financiero (1-5)", 1, 5)
